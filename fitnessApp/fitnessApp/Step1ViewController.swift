@@ -8,23 +8,44 @@
 import UIKit
 
 class Step1ViewController: UIViewController {
+    
+    // PROPERTIES
     var gender: String = ""
     
+    @IBOutlet weak var otherButton: UIButton!
+    @IBOutlet weak var femaleButton: UIButton!
+    @IBOutlet weak var maleButton: UIButton!
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
+    super.viewDidLoad()
+        configureButtons()
 
-        // Do any additional setup after loading the view.
     }
 
-    @IBAction func maleButton(_ sender: Any) {
-        //if click male
+    func configureButtons()
+    {
+        maleButton.layer.cornerRadius = 0.5 * maleButton.bounds.size.width
+        maleButton.clipsToBounds = true
+        
+        femaleButton.layer.cornerRadius = 0.5 * femaleButton.bounds.size.width
+        femaleButton.clipsToBounds = true
+        otherButton.layer.cornerRadius = 0.5 * otherButton.bounds.size.width
+        otherButton.clipsToBounds = true
+    }
+ 
+    @IBAction func maleAction(_ sender: Any)
+    {
         gender = "Male"
     }
-    @IBAction func femaleButton(_ sender: Any) {
+    
+    @IBAction func femaleAction(_ sender: Any)
+    {
         gender = "Female"
     }
-    @IBAction func otherButton(_ sender: Any) {
-        gender = "other"
+    
+    @IBAction func otherAction(_ sender: Any)
+    {
+        gender = "Other"
     }
     
     /*
@@ -36,5 +57,4 @@ class Step1ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }

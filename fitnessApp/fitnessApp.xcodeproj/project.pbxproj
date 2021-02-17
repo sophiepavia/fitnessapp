@@ -16,6 +16,8 @@
 		3380699B25D86ABA0031A084 /* fitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380699A25D86ABA0031A084 /* fitnessAppTests.swift */; };
 		338069A625D86ABA0031A084 /* fitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069A525D86ABA0031A084 /* fitnessAppUITests.swift */; };
 		338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069BE25D86DD70031A084 /* Step1ViewController.swift */; };
+		E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */; };
+		E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		338069A525D86ABA0031A084 /* fitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitnessAppUITests.swift; sourceTree = "<group>"; };
 		338069A725D86ABA0031A084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338069BE25D86DD70031A084 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
+		E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
+		E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				3380698525D86AB90031A084 /* SceneDelegate.swift */,
 				3380698725D86AB90031A084 /* ViewController.swift */,
 				3380698925D86AB90031A084 /* Main.storyboard */,
+				E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */,
+				E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */,
 				338069BE25D86DD70031A084 /* Step1ViewController.swift */,
 				3380698C25D86ABA0031A084 /* Assets.xcassets */,
 				3380698E25D86ABA0031A084 /* LaunchScreen.storyboard */,
@@ -262,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */,
+				E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */,
+				E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */,
 				3380698825D86AB90031A084 /* ViewController.swift in Sources */,
 				3380698425D86AB90031A084 /* AppDelegate.swift in Sources */,
 				3380698625D86AB90031A084 /* SceneDelegate.swift in Sources */,
