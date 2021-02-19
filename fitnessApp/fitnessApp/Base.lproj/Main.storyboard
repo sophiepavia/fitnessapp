@@ -23,11 +23,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U6-l4-YdB">
-                                <rect key="frame" x="20" y="714" width="374" height="59"/>
+                                <rect key="frame" x="20" y="748" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="Start your journey">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                    <color key="titleColor" systemColor="linkColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="u9Y-tT-mXc" kind="show" id="mzc-le-SQZ"/>
@@ -53,7 +53,7 @@
             <objects>
                 <viewController id="pPu-BY-Dwe" customClass="Step1ViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b3T-a8-0ba">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgr-PK-deJ">
@@ -124,7 +124,7 @@ not say</string>
             <objects>
                 <viewController id="Moa-aQ-0WF" customClass="Step2ViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hDa-dc-yZf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1V4-CJ-s9u">
@@ -209,7 +209,7 @@ like to focus on?</string>
             <objects>
                 <viewController id="MlM-q5-avc" customClass="Step3ViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DVj-EF-Eff">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your height (in)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="40q-aB-1kA">
@@ -228,6 +228,15 @@ like to focus on?</string>
                                 <rect key="frame" x="-23" y="441" width="461" height="421"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmI-Yg-o9k">
+                                <rect key="frame" x="152" y="386" width="117" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Lets Begin!"/>
+                                <connections>
+                                    <segue destination="561-Nb-puj" kind="presentation" modalPresentationStyle="fullScreen" id="mzr-h3-3Cj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mqx-rM-PFG"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -243,23 +252,114 @@ like to focus on?</string>
             </objects>
             <point key="canvasLocation" x="4382.608695652174" y="95.758928571428569"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="IM5-Y3-ZaS">
+        <!--View Controller-->
+        <scene sceneID="dpK-hL-cii">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="isg-bB-vKY" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BEW-dX-rQc">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lmc-1e-EWp"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tl6-SQ-mzY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="dyr-yQ-t4h" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kXX-Sc-k0q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="4M0-1P-Pbf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="JMz-s2-nuq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3L-12-bGJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="75.669642857142847"/>
+            <point key="canvasLocation" x="6158" y="494"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="1wW-68-Nky">
+            <objects>
+                <viewController id="arv-1w-t8A" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vHX-iR-vxj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let's Get Fit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vOl-c3-35G">
+                                <rect key="frame" x="47" y="61" width="135" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAe-6v-s5X">
+                                <rect key="frame" x="312" y="58" width="58" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Profile"/>
+                                <connections>
+                                    <segue destination="2bT-xg-bVn" kind="presentation" modalPresentationStyle="fullScreen" id="TLd-HL-uyG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="agd-qP-gb8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="circle" catalog="system" id="A5a-UN-qpz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H1n-MM-Tz0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6858" y="153"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="qoI-4T-R7H">
+            <objects>
+                <viewController id="2bT-xg-bVn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hD9-Lq-gX0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cri-Jt-jtn">
+                                <rect key="frame" x="172" y="95" width="71" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="SOP-8f-fHx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7DO-js-clH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7690" y="164"/>
+        </scene>
+        <!--Workouts-->
+        <scene sceneID="a1x-PH-gJ3">
+            <objects>
+                <viewController id="HCh-oP-7W9" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o6V-rg-CVc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="j3j-eH-6Yu"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="Image" id="BqG-5E-wHE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XcE-z1-PnC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6158" y="-177"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="02e-ba-3P4">
+            <objects>
+                <tabBarController id="561-Nb-puj" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FjE-oE-ivS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HCh-oP-7W9" kind="relationship" relationship="viewControllers" id="XXf-l3-X19"/>
+                        <segue destination="arv-1w-t8A" kind="relationship" relationship="viewControllers" id="ttS-JG-K3Z"/>
+                        <segue destination="dyr-yQ-t4h" kind="relationship" relationship="viewControllers" id="8wu-1a-Nvn"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i9E-ch-2n1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5268" y="96"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KdW-1e-ddW">
@@ -268,7 +368,7 @@ like to focus on?</string>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="zXB-JH-gxH"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bq2-PQ-Mxa">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -282,12 +382,20 @@ like to focus on?</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xDw-0j-wND"/>
+        <segue reference="WNt-QJ-ZeS"/>
         <segue reference="p7v-Lg-s21"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="Image" width="25" height="25"/>
+        <image name="circle" catalog="system" width="128" height="121"/>
         <image name="victor-freitas-JbI04nYfaJk-unsplash" width="2592" height="1728"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
