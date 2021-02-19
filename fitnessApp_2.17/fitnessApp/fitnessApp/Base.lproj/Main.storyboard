@@ -23,7 +23,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5U6-l4-YdB">
-                                <rect key="frame" x="20" y="748" width="374" height="59"/>
+                                <rect key="frame" x="20" y="252" width="374" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="46"/>
                                 <state key="normal" title="Start your journey">
@@ -146,7 +146,7 @@ like to focus on?</string>
                                 </state>
                                 <connections>
                                     <action selector="armAction:" destination="Moa-aQ-0WF" eventType="touchUpInside" id="L3h-m7-lhp"/>
-                                    <segue destination="MlM-q5-avc" kind="show" id="WNt-QJ-ZeS"/>
+                                    <segue destination="3ld-we-bTy" kind="showDetail" id="iPn-yy-mP1"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-Px-n2a">
@@ -185,7 +185,6 @@ like to focus on?</string>
                                 </state>
                                 <connections>
                                     <action selector="gluteAction:" destination="Moa-aQ-0WF" eventType="touchUpInside" id="8tS-ue-7Jk"/>
-                                    <segue destination="MlM-q5-avc" kind="show" id="rkt-tv-gQ4"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -318,6 +317,75 @@ like to focus on?</string>
             </objects>
             <point key="canvasLocation" x="5892.753623188406" y="105.80357142857143"/>
         </scene>
+        <!--Step4 View Controller-->
+        <scene sceneID="W0x-Hh-yEP">
+            <objects>
+                <viewController id="3ld-we-bTy" customClass="Step4ViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QAT-u5-By1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="wme-BV-rcf">
+                                <rect key="frame" x="20" y="102" width="247" height="31.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENTER THE WEIGHT: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odg-CB-tra">
+                                        <rect key="frame" x="0.0" y="0.0" width="247" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ENTER THE REPS: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ty-X4-Vhp">
+                                <rect key="frame" x="20" y="127" width="217" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TES-PJ-3ah">
+                                <rect key="frame" x="20" y="264" width="156" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsA-TN-oOz">
+                                <rect key="frame" x="20" y="182" width="184" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="CALCULATE 1 REP MAX"/>
+                                <connections>
+                                    <action selector="calculateButton:" destination="OXW-ef-pqM" eventType="touchUpInside" id="x9W-Xh-Buw"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Tbq-Py-C4m">
+                                <rect key="frame" x="275" y="102" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jlg-Qx-B0B">
+                                <rect key="frame" x="275" y="140" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sxP-6K-qKJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelOutput" destination="TES-PJ-3ah" id="nUF-eI-pv5"/>
+                        <outlet property="newLabelOutput" destination="TES-PJ-3ah" id="Rki-uQ-RJw"/>
+                        <outlet property="repsInput" destination="jlg-Qx-B0B" id="n2Z-GQ-HHQ"/>
+                        <outlet property="weightInput" destination="Tbq-Py-C4m" id="Iak-kl-YiL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Qt-Ws-IYV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="OXW-ef-pqM" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="5171" y="788"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="KdW-1e-ddW">
             <objects>
@@ -339,7 +407,7 @@ like to focus on?</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="WNt-QJ-ZeS"/>
+        <segue reference="xDw-0j-wND"/>
         <segue reference="p7v-Lg-s21"/>
     </inferredMetricsTieBreakers>
     <resources>
