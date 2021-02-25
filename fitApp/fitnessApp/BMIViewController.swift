@@ -15,8 +15,8 @@ class BMIViewController: UIViewController {
     override func viewDidLoad() {
        
         
-        var weight = Double(globalWeight) ?? 0.0
-        var height = Double(globalHeight) ?? 0.0
+        let weight = Double(globalWeight) ?? 0.0
+        let height = Double(globalHeight) ?? 0.0
         let bmi = (weight/(height*height))*703
         
         outputText.text = String(bmi)
