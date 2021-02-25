@@ -40,7 +40,8 @@ class CalorieCalculator: UIViewController, UIPickerViewDataSource, UIPickerViewA
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        bodyWeight.delegate = self
+        bodyWeight.text = globalWeight
+        
         bodyFat.delegate = self
         // Do any additional setup after loading
         // the view.

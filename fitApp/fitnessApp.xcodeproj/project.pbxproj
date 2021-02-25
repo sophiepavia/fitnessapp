@@ -18,6 +18,8 @@
 		338069A625D86ABA0031A084 /* fitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069A525D86ABA0031A084 /* fitnessAppUITests.swift */; };
 		338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069BE25D86DD70031A084 /* Step1ViewController.swift */; };
 		86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86926A0125E19CB7007D52DF /* CalorieCalculator.swift */; };
+		A0D9B32425E817AF00B93C3A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32325E817AF00B93C3A /* File.swift */; };
+		A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32B25E8197800B93C3A /* BMIViewController.swift */; };
 		E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */; };
 		E8AA910025E6B68E0046EFC9 /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */; };
 		E8AA910525E6B6960046EFC9 /* InsertWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */; };
@@ -60,6 +62,8 @@
 		338069A725D86ABA0031A084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338069BE25D86DD70031A084 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
 		86926A0125E19CB7007D52DF /* CalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
+		A0D9B32325E817AF00B93C3A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		A0D9B32B25E8197800B93C3A /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
 		E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
 		E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
 		E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertWorkout.swift; sourceTree = "<group>"; };
@@ -115,6 +119,7 @@
 		3380698225D86AB90031A084 /* fitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0D9B32B25E8197800B93C3A /* BMIViewController.swift */,
 				3380698325D86AB90031A084 /* AppDelegate.swift */,
 				3380698525D86AB90031A084 /* SceneDelegate.swift */,
 				3380698725D86AB90031A084 /* ViewController.swift */,
@@ -125,6 +130,7 @@
 				86926A0125E19CB7007D52DF /* CalorieCalculator.swift */,
 				333A475B25DEE40600E25965 /* MainPageViewController.swift */,
 				E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */,
+				A0D9B32325E817AF00B93C3A /* File.swift */,
 				E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */,
 				338069BE25D86DD70031A084 /* Step1ViewController.swift */,
 				3380698C25D86ABA0031A084 /* Assets.xcassets */,
@@ -291,8 +297,10 @@
 				E8AA910025E6B68E0046EFC9 /* CreateWorkout.swift in Sources */,
 				E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */,
 				3380698825D86AB90031A084 /* ViewController.swift in Sources */,
+				A0D9B32425E817AF00B93C3A /* File.swift in Sources */,
 				3380698425D86AB90031A084 /* AppDelegate.swift in Sources */,
 				3380698625D86AB90031A084 /* SceneDelegate.swift in Sources */,
+				A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

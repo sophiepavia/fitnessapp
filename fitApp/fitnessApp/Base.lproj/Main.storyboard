@@ -228,13 +228,13 @@ like to focus on?</string>
                                 <rect key="frame" x="-23" y="441" width="461" height="421"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CmI-Yg-o9k">
-                                <rect key="frame" x="146.08799761315277" y="386" width="116.99999999999955" height="68.000000000000028"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxl-FI-MYq">
+                                <rect key="frame" x="160" y="378" width="88" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Lets Begin!"/>
+                                <state key="normal" title="LETS BEGIN!"/>
                                 <connections>
-                                    <segue destination="561-Nb-puj" kind="presentation" modalPresentationStyle="fullScreen" id="mzr-h3-3Cj"/>
+                                    <action selector="button:" destination="MlM-q5-avc" eventType="touchUpInside" id="AbK-Tq-igD"/>
+                                    <segue destination="561-Nb-puj" kind="presentation" modalPresentationStyle="fullScreen" id="kfr-n2-jgw"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -269,6 +269,17 @@ like to focus on?</string>
                                 </state>
                                 <connections>
                                     <segue destination="OKL-lb-tfk" kind="show" id="8Tu-BG-F2d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dkt-ep-Yes">
+                                <rect key="frame" x="88" y="213" width="239" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="BMI Calculator">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZAs-Da-CFG" kind="presentation" modalPresentationStyle="fullScreen" id="I8P-Bu-3tz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -725,6 +736,7 @@ like to focus on?</string>
         <scene sceneID="02e-ba-3P4">
             <objects>
                 <tabBarController id="561-Nb-puj" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="7mj-RL-DaA"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FjE-oE-ivS">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -759,9 +771,50 @@ like to focus on?</string>
             </objects>
             <point key="canvasLocation" x="1740.5797101449277" y="80.357142857142847"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="XLo-vE-Bfh">
+            <objects>
+                <viewController id="ZAs-Da-CFG" customClass="BMIViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="T01-Ug-bAa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="BMI Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TRb-nO-Dhx">
+                                <rect key="frame" x="20" y="83" width="374.00000000000091" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YOUR BMI IS: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q3G-gM-uEh">
+                                <rect key="frame" x="19" y="139" width="261" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GXG-no-7Jy">
+                                <rect key="frame" x="288" y="146" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="nqh-4o-pos"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="8LE-83-x5i"/>
+                    <connections>
+                        <outlet property="outputText" destination="GXG-no-7Jy" id="4hf-gs-zCD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgh-4W-Lw5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6157.971014492754" y="1181.9196428571429"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="mzr-h3-3Cj"/>
+        <segue reference="kfr-n2-jgw"/>
         <segue reference="f6v-BI-x73"/>
         <segue reference="WNt-QJ-ZeS"/>
         <segue reference="p7v-Lg-s21"/>
