@@ -435,6 +435,15 @@ like to focus on?</string>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XCu-cD-oYm">
+                                <rect key="frame" x="52" y="57" width="50" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <segue destination="arv-1w-t8A" kind="presentation" modalPresentationStyle="fullScreen" id="f6v-BI-x73"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SOP-8f-fHx"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -752,7 +761,8 @@ like to focus on?</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="M7f-ub-N1D"/>
+        <segue reference="mzr-h3-3Cj"/>
+        <segue reference="f6v-BI-x73"/>
         <segue reference="WNt-QJ-ZeS"/>
         <segue reference="p7v-Lg-s21"/>
     </inferredMetricsTieBreakers>
