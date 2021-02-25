@@ -11,11 +11,14 @@ class Step3ViewController: UIViewController {
 
     //MARK: Properties
     
+ HenryGilbertBranch
     
     var height = ""
     var weight = ""
     
     
+
+ main
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var weightText: UITextField!
     @IBOutlet weak var heightText: UITextField!
@@ -24,6 +27,7 @@ class Step3ViewController: UIViewController {
     {
         super.viewDidLoad()
     }
+ HenryGilbertBranch
     
     
     @IBAction func SumbitButton(_ sender: Any) {
@@ -43,5 +47,7 @@ class Step3ViewController: UIViewController {
 //        vc.finalHeight = self.height
 //    }
 //
+
+ main
 
 }
