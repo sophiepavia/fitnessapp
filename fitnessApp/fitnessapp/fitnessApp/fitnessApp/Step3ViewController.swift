@@ -11,6 +11,14 @@ class Step3ViewController: UIViewController {
 
     //MARK: Properties
     
+ HenryGilbertBranch
+    
+    var height = ""
+    var weight = ""
+    
+    
+
+ main
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var weightText: UITextField!
     @IBOutlet weak var heightText: UITextField!
@@ -19,5 +27,27 @@ class Step3ViewController: UIViewController {
     {
         super.viewDidLoad()
     }
+ HenryGilbertBranch
+    
+    
+    @IBAction func SumbitButton(_ sender: Any) {
+       
+        //self.height = heightText.text!
+       // self.weight = weightText.text!
+        
+        //performSegue(withIdentifier: "go", sender: self)
+        
+    }
+    
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//
+//        var vc = segue.destination as!BMIViewController
+//
+//        vc.finalWeight = self.weight
+//        vc.finalHeight = self.height
+//    }
+//
+
+ main
 
 }
