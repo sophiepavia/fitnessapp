@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19E149642B66A273EEECA27D /* Pods_fitnessAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0821D888C189BCF0E664671C /* Pods_fitnessAppTests.framework */; };
+		32901059DC6B92898F2200A8 /* Pods_fitnessApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB6CA564DDFF4ED613C7E2EB /* Pods_fitnessApp.framework */; };
 		333A475C25DEE40600E25965 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333A475B25DEE40600E25965 /* MainPageViewController.swift */; };
 		3380698425D86AB90031A084 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380698325D86AB90031A084 /* AppDelegate.swift */; };
 		3380698625D86AB90031A084 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380698525D86AB90031A084 /* SceneDelegate.swift */; };
@@ -17,6 +19,7 @@
 		3380699B25D86ABA0031A084 /* fitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380699A25D86ABA0031A084 /* fitnessAppTests.swift */; };
 		338069A625D86ABA0031A084 /* fitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069A525D86ABA0031A084 /* fitnessAppUITests.swift */; };
 		338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069BE25D86DD70031A084 /* Step1ViewController.swift */; };
+		688EC7BB7636D33A3056E157 /* Pods_fitnessApp_fitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02088EF0E5B263B01862752F /* Pods_fitnessApp_fitnessAppUITests.framework */; };
 		86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86926A0125E19CB7007D52DF /* CalorieCalculator.swift */; };
 		A0D9B32425E817AF00B93C3A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32325E817AF00B93C3A /* File.swift */; };
 		A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32B25E8197800B93C3A /* BMIViewController.swift */; };
@@ -45,6 +48,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02088EF0E5B263B01862752F /* Pods_fitnessApp_fitnessAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitnessApp_fitnessAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0821D888C189BCF0E664671C /* Pods_fitnessAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitnessAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		241978DB5FDB858AD9FD636B /* Pods-fitnessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessAppTests.release.xcconfig"; path = "Target Support Files/Pods-fitnessAppTests/Pods-fitnessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		333A475B25DEE40600E25965 /* MainPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
 		3380698025D86AB90031A084 /* fitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3380698325D86AB90031A084 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +67,15 @@
 		338069A525D86ABA0031A084 /* fitnessAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fitnessAppUITests.swift; sourceTree = "<group>"; };
 		338069A725D86ABA0031A084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338069BE25D86DD70031A084 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
+		3763BEEA39D4A8B486D6A65A /* Pods-fitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessAppTests.debug.xcconfig"; path = "Target Support Files/Pods-fitnessAppTests/Pods-fitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F9427D2E81E0BB7E4B970F2 /* Pods-fitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp.release.xcconfig"; path = "Target Support Files/Pods-fitnessApp/Pods-fitnessApp.release.xcconfig"; sourceTree = "<group>"; };
+		69C412693D83237AED7872C5 /* Pods-fitnessApp-fitnessAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp-fitnessAppUITests.release.xcconfig"; path = "Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		73F7E21E98CA2D2C56D5449D /* Pods-fitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-fitnessApp/Pods-fitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
 		86926A0125E19CB7007D52DF /* CalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
+		8902C071542EEE3B157A0BEC /* Pods-fitnessApp-fitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D9B32325E817AF00B93C3A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A0D9B32B25E8197800B93C3A /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		BB6CA564DDFF4ED613C7E2EB /* Pods_fitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
 		E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
 		E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertWorkout.swift; sourceTree = "<group>"; };
@@ -76,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32901059DC6B92898F2200A8 /* Pods_fitnessApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E149642B66A273EEECA27D /* Pods_fitnessAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688EC7BB7636D33A3056E157 /* Pods_fitnessApp_fitnessAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +118,8 @@
 				3380699925D86ABA0031A084 /* fitnessAppTests */,
 				338069A425D86ABA0031A084 /* fitnessAppUITests */,
 				3380698125D86AB90031A084 /* Products */,
+				BB817E79C10C1090895525DF /* Pods */,
+				9A30078D6E1A0E70296CD0F3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,6 +175,29 @@
 			path = fitnessAppUITests;
 			sourceTree = "<group>";
 		};
+		9A30078D6E1A0E70296CD0F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB6CA564DDFF4ED613C7E2EB /* Pods_fitnessApp.framework */,
+				02088EF0E5B263B01862752F /* Pods_fitnessApp_fitnessAppUITests.framework */,
+				0821D888C189BCF0E664671C /* Pods_fitnessAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB817E79C10C1090895525DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				73F7E21E98CA2D2C56D5449D /* Pods-fitnessApp.debug.xcconfig */,
+				5F9427D2E81E0BB7E4B970F2 /* Pods-fitnessApp.release.xcconfig */,
+				8902C071542EEE3B157A0BEC /* Pods-fitnessApp-fitnessAppUITests.debug.xcconfig */,
+				69C412693D83237AED7872C5 /* Pods-fitnessApp-fitnessAppUITests.release.xcconfig */,
+				3763BEEA39D4A8B486D6A65A /* Pods-fitnessAppTests.debug.xcconfig */,
+				241978DB5FDB858AD9FD636B /* Pods-fitnessAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 338069AA25D86ABA0031A084 /* Build configuration list for PBXNativeTarget "fitnessApp" */;
 			buildPhases = (
+				72663FAC33A9257B8E75A8F0 /* [CP] Check Pods Manifest.lock */,
 				3380697C25D86AB90031A084 /* Sources */,
 				3380697D25D86AB90031A084 /* Frameworks */,
 				3380697E25D86AB90031A084 /* Resources */,
+				EA7CFD1D93C59685E12B4B00 /* [CP] Embed Pods Frameworks */,
+				91B5AE7BD2C9411EE0563629 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,6 +225,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 338069AD25D86ABA0031A084 /* Build configuration list for PBXNativeTarget "fitnessAppTests" */;
 			buildPhases = (
+				FEC826C9E7D2CDE720C0BFFD /* [CP] Check Pods Manifest.lock */,
 				3380699225D86ABA0031A084 /* Sources */,
 				3380699325D86ABA0031A084 /* Frameworks */,
 				3380699425D86ABA0031A084 /* Resources */,
@@ -200,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 338069B025D86ABA0031A084 /* Build configuration list for PBXNativeTarget "fitnessAppUITests" */;
 			buildPhases = (
+				58F893930A78109E2F017019 /* [CP] Check Pods Manifest.lock */,
 				3380699D25D86ABA0031A084 /* Sources */,
 				3380699E25D86ABA0031A084 /* Frameworks */,
 				3380699F25D86ABA0031A084 /* Resources */,
+				DD7061FD6D1A04A313EB0AA2 /* [CP] Embed Pods Frameworks */,
+				B60FB5449F9722D84DC499E2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,6 +329,143 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		58F893930A78109E2F017019 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitnessApp-fitnessAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72663FAC33A9257B8E75A8F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitnessApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91B5AE7BD2C9411EE0563629 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp/Pods-fitnessApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp/Pods-fitnessApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fitnessApp/Pods-fitnessApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B60FB5449F9722D84DC499E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD7061FD6D1A04A313EB0AA2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA7CFD1D93C59685E12B4B00 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp/Pods-fitnessApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-fitnessApp/Pods-fitnessApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-fitnessApp/Pods-fitnessApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEC826C9E7D2CDE720C0BFFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-fitnessAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3380697C25D86AB90031A084 /* Sources */ = {
@@ -473,6 +657,7 @@
 		};
 		338069AB25D86ABA0031A084 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73F7E21E98CA2D2C56D5449D /* Pods-fitnessApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -491,6 +676,7 @@
 		};
 		338069AC25D86ABA0031A084 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F9427D2E81E0BB7E4B970F2 /* Pods-fitnessApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -509,6 +695,7 @@
 		};
 		338069AE25D86ABA0031A084 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3763BEEA39D4A8B486D6A65A /* Pods-fitnessAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +717,7 @@
 		};
 		338069AF25D86ABA0031A084 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 241978DB5FDB858AD9FD636B /* Pods-fitnessAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -551,6 +739,7 @@
 		};
 		338069B125D86ABA0031A084 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8902C071542EEE3B157A0BEC /* Pods-fitnessApp-fitnessAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -570,6 +759,7 @@
 		};
 		338069B225D86ABA0031A084 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69C412693D83237AED7872C5 /* Pods-fitnessApp-fitnessAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

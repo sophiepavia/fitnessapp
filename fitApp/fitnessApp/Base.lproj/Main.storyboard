@@ -36,6 +36,39 @@
                                     <segue destination="u9Y-tT-mXc" kind="show" id="mzc-le-SQZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEx-Ig-6Vt">
+                                <rect key="frame" x="177" y="516" width="87" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-Pu-Yqf">
+                                <rect key="frame" x="133" y="368" width="131" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ftg-Gw-udv">
+                                <rect key="frame" x="78" y="627" width="122" height="78"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Disconnect">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6od-eE-cbH">
+                                <rect key="frame" x="68" y="498" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G1b-YH-DxG">
+                                <rect key="frame" x="68" y="498" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,6 +79,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9YF-Er-0LH"/>
+                    <connections>
+                        <outlet property="disconnectButton" destination="ftg-Gw-udv" id="8c1-QE-Rmc"/>
+                        <outlet property="signInButton" destination="G1b-YH-DxG" id="qlr-rV-m91"/>
+                        <outlet property="signOutButton" destination="IEx-Ig-6Vt" id="VuA-iJ-bEn"/>
+                        <outlet property="statusText" destination="QSl-Pu-Yqf" id="INg-i6-ica"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -825,7 +864,7 @@ like to focus on?</string>
         <segue reference="kfr-n2-jgw"/>
         <segue reference="f6v-BI-x73"/>
         <segue reference="WNt-QJ-ZeS"/>
-        <segue reference="p7v-Lg-s21"/>
+        <segue reference="7OD-BJ-quc"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Image" width="25" height="25"/>
