@@ -8,6 +8,7 @@
 import UIKit
 
 class Step1ViewController: UIViewController {
+    let userDefaults = UserDefaults()
     
     // MARK: Properties
     var gender: String = ""
@@ -39,15 +40,20 @@ class Step1ViewController: UIViewController {
     @IBAction func maleAction(_ sender: Any)
     {
         gender = "Male"
+        userDefaults.setValue(gender, forKey: "BODYPART")
     }
     
     @IBAction func femaleAction(_ sender: Any)
     {
         gender = "Female"
+        userDefaults.setValue(gender, forKey: "BODYPART")
+
     }
     
     @IBAction func otherAction(_ sender: Any)
     {
         gender = "Other"
+        userDefaults.setValue(gender, forKey: "BODYPART")
+
     }
 }

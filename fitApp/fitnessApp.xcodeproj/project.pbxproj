@@ -23,6 +23,7 @@
 		86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86926A0125E19CB7007D52DF /* CalorieCalculator.swift */; };
 		A0D9B32425E817AF00B93C3A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32325E817AF00B93C3A /* File.swift */; };
 		A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32B25E8197800B93C3A /* BMIViewController.swift */; };
+		A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */; };
 		E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */; };
 		E8AA910025E6B68E0046EFC9 /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */; };
 		E8AA910525E6B6960046EFC9 /* InsertWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */; };
@@ -75,6 +76,7 @@
 		8902C071542EEE3B157A0BEC /* Pods-fitnessApp-fitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D9B32325E817AF00B93C3A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A0D9B32B25E8197800B93C3A /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
+		A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoardViewController.swift; sourceTree = "<group>"; };
 		BB6CA564DDFF4ED613C7E2EB /* Pods_fitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
 		E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				3380698525D86AB90031A084 /* SceneDelegate.swift */,
 				3380698725D86AB90031A084 /* ViewController.swift */,
 				3380698925D86AB90031A084 /* Main.storyboard */,
+				A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */,
 				E8AA910925E6B69F0046EFC9 /* WorkoutSelection.swift */,
 				E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */,
 				E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */,
@@ -472,6 +475,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */,
 				338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */,
 				E8AA910525E6B6960046EFC9 /* InsertWorkout.swift in Sources */,
 				333A475C25DEE40600E25965 /* MainPageViewController.swift in Sources */,

@@ -9,6 +9,7 @@ import UIKit
 
 class Step2ViewController: UIViewController {
 
+    let userDefaults = UserDefaults()
     var bodyPart: String = ""
     //MARK: Properties
     
@@ -26,19 +27,23 @@ class Step2ViewController: UIViewController {
     @IBAction func armAction(_ sender: Any)
     {
         bodyPart = "arm"
+        userDefaults.setValue(bodyPart, forKey: "BODYPART")
     }
     
     @IBAction func legAction(_ sender: Any)
     {
         bodyPart = "leg"
+        userDefaults.setValue(bodyPart, forKey: "BODYPART")
     }
     
     @IBAction func absAction(_ sender: Any)
     {
         bodyPart = "abs"
+        userDefaults.setValue(bodyPart, forKey: "BODYPART")
     }
     @IBAction func gluteAction(_ sender: Any)
     {
         bodyPart = "glutes"
+        userDefaults.setValue(bodyPart, forKey: "BODYPART")
     }
 }
