@@ -6,15 +6,16 @@
 //
 
 import UIKit
-import GoogleSignIn
-
-@objc(ViewController)
 
 class ViewController: UIViewController {
     
     //MARK: Properties
     
- 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+ /*
     
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signOutButton: UIButton!
@@ -23,6 +24,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
       super.viewDidLoad()
+    }
 
       GIDSignIn.sharedInstance()?.presentingViewController = self
 
@@ -38,7 +40,9 @@ class ViewController: UIViewController {
       toggleAuthUI()
     }
 
-    @IBAction func didTapSignOut(_ sender: AnyObject) {
+     @IBAction func didTapSignOut(_ sender: Any) {
+     }
+     @IBAction func didTapSignOut(_ sender: AnyObject) {
       GIDSignIn.sharedInstance().signOut()
       statusText.text = "Signed out."
       toggleAuthUI()
@@ -46,7 +50,9 @@ class ViewController: UIViewController {
  
     @IBAction func didTapDisconnect(_ sender: AnyObject) {
       GIDSignIn.sharedInstance().disconnect()
-
+     @IBAction func didTapDisconnect(_ sender: Any) {
+     }
+     
       statusText.text = "Disconnecting."
 
     }
@@ -84,5 +90,6 @@ class ViewController: UIViewController {
         }
       }
     }
+ */
 }
 

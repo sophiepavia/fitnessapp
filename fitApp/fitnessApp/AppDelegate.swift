@@ -36,7 +36,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
        return GIDSignIn.sharedInstance().handle(url)
      }
     
-    @available(iOS 9.0, *)
+    @available(iOS 14.4, *)
      func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
        return GIDSignIn.sharedInstance().handle(url)
      }
@@ -49,10 +49,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
         } else {
           print("\(error.localizedDescription)")
         }
-        // [START_EXCLUDE silent]
+      
         NotificationCenter.default.post(
           name: Notification.Name(rawValue: "ToggleAuthUINotification"), object: nil, userInfo: nil)
-        // [END_EXCLUDE]
+  
         return
       }
         
