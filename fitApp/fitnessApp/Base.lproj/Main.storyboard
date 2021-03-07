@@ -30,6 +30,9 @@
                                 <state key="normal" title="Sign Out">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapSignOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RWk-xf-HJU"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSl-Pu-Yqf">
                                 <rect key="frame" x="133" y="368" width="131" height="67"/>
@@ -45,6 +48,9 @@
                                 <state key="normal" title="Disconnect">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapDisconnect:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IIR-La-zAS"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6od-eE-cbH">
                                 <rect key="frame" x="68" y="498" width="46" height="30"/>
@@ -71,10 +77,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="9YF-Er-0LH"/>
                     <connections>
-                        <outlet property="disconnectButton" destination="ftg-Gw-udv" id="8c1-QE-Rmc"/>
-                        <outlet property="signInButton" destination="G1b-YH-DxG" id="qlr-rV-m91"/>
-                        <outlet property="signOutButton" destination="IEx-Ig-6Vt" id="VuA-iJ-bEn"/>
-                        <outlet property="statusText" destination="QSl-Pu-Yqf" id="INg-i6-ica"/>
+                        <outlet property="disconnectButton" destination="ftg-Gw-udv" id="hdK-Z7-uM3"/>
+                        <outlet property="signInButton" destination="G1b-YH-DxG" id="1T4-Gm-zZ8"/>
+                        <outlet property="signOutButton" destination="IEx-Ig-6Vt" id="jKL-K7-v6j"/>
+                        <outlet property="statusText" destination="QSl-Pu-Yqf" id="W5e-OK-Ny3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
