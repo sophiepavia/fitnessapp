@@ -13,11 +13,11 @@ class InsertWorkout: UIViewController, UIPickerViewDelegate, UIPickerViewDataSou
     @IBOutlet weak var Weight: UITextField!
     @IBOutlet weak var Reps: UITextField!
     @IBOutlet weak var picker: UIPickerView!
-    @IBOutlet weak var Feeling: UISlider!
+    @IBOutlet weak var feelingSlider: UISlider!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerData = ["Arms", "Legs", "Abs", "Glutes"]
-        // Do any additional setup after loading the view.
         // Connect data:
               self.picker.delegate = self
               self.picker.dataSource = self

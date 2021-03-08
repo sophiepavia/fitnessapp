@@ -11,8 +11,12 @@ import GoogleSignIn
 @objc(ViewController)
 
 class HomeBoardViewController: UIViewController {
-    
    
+    //MARK: Properties
+    
+    //nickname for GIDSignIn.sharedInstance()
+    var googleSignIn = GIDSignIn.sharedInstance()
+    
     @IBOutlet weak var statusText: UILabel!
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var signOutButton: UIButton!
@@ -22,62 +26,74 @@ class HomeBoardViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     
     GIDSignIn.sharedInstance()?.presentingViewController = self
 
-    // Automatically sign in the user.
+    // Automatically sign in the user
     GIDSignIn.sharedInstance()?.restorePreviousSignIn()
 
-    NotificationCenter.default.addObserver(self,
+      NotificationCenter.default.addObserver(self,
         selector: #selector(HomeBoardViewController.receiveToggleAuthUINotification(_:)),
         name: NSNotification.Name(rawValue: "ToggleAuthUINotification"),
         object: nil)
 
     statusText.text = "Initialized Swift app..."
     toggleAuthUI()
-  }
+    }
 
+    //If the user clicks sign in
+    @IBAction func didTapSignIn(_ sender: Any)
+    {
+        self.googleAuthLogin()
+    }
     
-  @IBAction func didTapSignOut(_ sender: AnyObject) {
+    //Functionality of the user clicking sign in
+    func googleAuthLogin() {
+        self.googleSignIn?.signIn()
+    }
+  
+    //If the user clicks sign out
+    @IBAction func didTapSignOut(_ sender: AnyObject) {
     GIDSignIn.sharedInstance().signOut()
     statusText.text = "Signed out."
     toggleAuthUI()
-  }
+    }
 
-  @IBAction func didTapDisconnect(_ sender: AnyObject) {
+    //If the user clicks disconnect
+    @IBAction func didTapDisconnect(_ sender: AnyObject) {
     GIDSignIn.sharedInstance().disconnect()
 
     statusText.text = "Disconnecting."
 
-  }
+    }
 
-  func toggleAuthUI() {
-    if let _ = GIDSignIn.sharedInstance()?.currentUser?.authentication {
+    func toggleAuthUI() {
+    if let _ = GIDSignIn.sharedInstance()?.currentUser?.authentication
+    {
       // Signed in
       signInButton.isHidden = true
       signOutButton.isHidden = false
       disconnectButton.isHidden = false
-    } else {
+      }
+      else {
       signInButton.isHidden = false
       signOutButton.isHidden = true
       disconnectButton.isHidden = true
       statusText.text = "Google Sign in\niOS Demo"
+      }
     }
-  }
 
-  override var preferredStatusBarStyle: UIStatusBarStyle {
+    override var preferredStatusBarStyle: UIStatusBarStyle {
     return UIStatusBarStyle.lightContent
-  }
+    }
 
-  deinit {
+    deinit {
     NotificationCenter.default.removeObserver(self,
         name: NSNotification.Name(rawValue: "ToggleAuthUINotification"),
         object: nil)
-  }
+    }
 
-  @objc func receiveToggleAuthUINotification(_ notification: NSNotification) {
+    @objc func receiveToggleAuthUINotification(_ notification: NSNotification) {
     if notification.name.rawValue == "ToggleAuthUINotification" {
       self.toggleAuthUI()
       if notification.userInfo != nil {
@@ -86,10 +102,10 @@ class HomeBoardViewController: UIViewController {
       }
     }
   }
-    
-    // ------------------------------------------
+    // Everything above this line is related to the Google API
+    // --------------------------------------------------------
 
-    @IBAction func Button(_ sender: Any) {
+      @IBAction func Button(_ sender: Any) {
         if (userDefaults.value(forKey: "WEIGHT") != nil){
     
             let story = UIStoryboard(name: "Main", bundle: nil)
@@ -102,16 +118,5 @@ class HomeBoardViewController: UIViewController {
                   let controller = story.instantiateViewController(identifier: "InitNav") as! UINavigationController
                   self.present(controller, animated: true, completion: nil)
            }
-        
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
