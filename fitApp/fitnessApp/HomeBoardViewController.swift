@@ -23,7 +23,7 @@ class HomeBoardViewController: UIViewController {
     @IBOutlet weak var disconnectButton: UIButton!
     
     let userDefaults = UserDefaults()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
