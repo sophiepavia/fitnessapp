@@ -1,13 +1,13 @@
 //
-//  CreateWorkout.swift
+//  SelectWorkout.swift
 //  fitnessApp
 //
-//  Created by Jack Garthwaite on 3/10/21.
+//  Created by Jack Garthwaite on 3/9/21.
 //
 
 import UIKit
 
-class CreateWorkout: UIViewController {
+class SelectWorkout: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

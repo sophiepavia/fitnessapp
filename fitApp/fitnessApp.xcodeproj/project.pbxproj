@@ -19,13 +19,15 @@
 		3380699B25D86ABA0031A084 /* fitnessAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3380699A25D86ABA0031A084 /* fitnessAppTests.swift */; };
 		338069A625D86ABA0031A084 /* fitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069A525D86ABA0031A084 /* fitnessAppUITests.swift */; };
 		338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069BE25D86DD70031A084 /* Step1ViewController.swift */; };
+		401A76F425F955900098901C /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401A76F325F955900098901C /* CreateWorkout.swift */; };
+		40E6F67325F9609E001D4482 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E6F67225F9609E001D4482 /* ExerciseTableViewController.swift */; };
+		40E85BD225F7DDC60029188D /* SelectWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40E85BD125F7DDC60029188D /* SelectWorkout.swift */; };
 		688EC7BB7636D33A3056E157 /* Pods_fitnessApp_fitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02088EF0E5B263B01862752F /* Pods_fitnessApp_fitnessAppUITests.framework */; };
 		86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86926A0125E19CB7007D52DF /* CalorieCalculator.swift */; };
 		A0D9B32425E817AF00B93C3A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32325E817AF00B93C3A /* File.swift */; };
 		A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32B25E8197800B93C3A /* BMIViewController.swift */; };
 		A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */; };
 		E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */; };
-		E8AA910025E6B68E0046EFC9 /* CreateWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */; };
 		E8AA910525E6B6960046EFC9 /* InsertWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */; };
 		E8AA910A25E6B69F0046EFC9 /* WorkoutSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AA910925E6B69F0046EFC9 /* WorkoutSelection.swift */; };
 		E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */; };
@@ -69,6 +71,9 @@
 		338069A725D86ABA0031A084 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338069BE25D86DD70031A084 /* Step1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1ViewController.swift; sourceTree = "<group>"; };
 		3763BEEA39D4A8B486D6A65A /* Pods-fitnessAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessAppTests.debug.xcconfig"; path = "Target Support Files/Pods-fitnessAppTests/Pods-fitnessAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		401A76F325F955900098901C /* CreateWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
+		40E6F67225F9609E001D4482 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
+		40E85BD125F7DDC60029188D /* SelectWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWorkout.swift; sourceTree = "<group>"; };
 		5F9427D2E81E0BB7E4B970F2 /* Pods-fitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp.release.xcconfig"; path = "Target Support Files/Pods-fitnessApp/Pods-fitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 		69C412693D83237AED7872C5 /* Pods-fitnessApp-fitnessAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp-fitnessAppUITests.release.xcconfig"; path = "Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		73F7E21E98CA2D2C56D5449D /* Pods-fitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-fitnessApp/Pods-fitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,7 +84,6 @@
 		A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoardViewController.swift; sourceTree = "<group>"; };
 		BB6CA564DDFF4ED613C7E2EB /* Pods_fitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
-		E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateWorkout.swift; sourceTree = "<group>"; };
 		E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsertWorkout.swift; sourceTree = "<group>"; };
 		E8AA910925E6B69F0046EFC9 /* WorkoutSelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutSelection.swift; sourceTree = "<group>"; };
 		E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
@@ -143,10 +147,12 @@
 				3380698525D86AB90031A084 /* SceneDelegate.swift */,
 				3380698725D86AB90031A084 /* ViewController.swift */,
 				3380698925D86AB90031A084 /* Main.storyboard */,
+				40E6F67225F9609E001D4482 /* ExerciseTableViewController.swift */,
+				40E85BD125F7DDC60029188D /* SelectWorkout.swift */,
 				A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */,
 				E8AA910925E6B69F0046EFC9 /* WorkoutSelection.swift */,
 				E8AA910425E6B6960046EFC9 /* InsertWorkout.swift */,
-				E8AA90FF25E6B68E0046EFC9 /* CreateWorkout.swift */,
+				401A76F325F955900098901C /* CreateWorkout.swift */,
 				86926A0125E19CB7007D52DF /* CalorieCalculator.swift */,
 				333A475B25DEE40600E25965 /* MainPageViewController.swift */,
 				E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */,
@@ -478,17 +484,19 @@
 				A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */,
 				338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */,
 				E8AA910525E6B6960046EFC9 /* InsertWorkout.swift in Sources */,
+				40E85BD225F7DDC60029188D /* SelectWorkout.swift in Sources */,
 				333A475C25DEE40600E25965 /* MainPageViewController.swift in Sources */,
 				E8AA910A25E6B69F0046EFC9 /* WorkoutSelection.swift in Sources */,
 				E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */,
 				86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */,
-				E8AA910025E6B68E0046EFC9 /* CreateWorkout.swift in Sources */,
 				E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */,
+				40E6F67325F9609E001D4482 /* ExerciseTableViewController.swift in Sources */,
 				3380698825D86AB90031A084 /* ViewController.swift in Sources */,
 				A0D9B32425E817AF00B93C3A /* File.swift in Sources */,
 				3380698425D86AB90031A084 /* AppDelegate.swift in Sources */,
 				3380698625D86AB90031A084 /* SceneDelegate.swift in Sources */,
 				A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */,
+				401A76F425F955900098901C /* CreateWorkout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
