@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D74" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="CoreData" representedClassName="CoreData" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="exerciseDescription" optional="YES" attributeType="String"/>
+        <attribute name="exerciseName" optional="YES" attributeType="String"/>
+        <attribute name="focusArea" optional="YES" attributeType="String"/>
+        <attribute name="repsPerSet" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="sets" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="weight" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="workoutName" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="CoreData" positionX="-63" positionY="-18" width="128" height="149"/>
+    </elements>
+</model>
