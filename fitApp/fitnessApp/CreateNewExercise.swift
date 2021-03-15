@@ -15,7 +15,6 @@ class CreateNewExercise: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
     @IBAction func createNewExerciseButton(_ sender: Any) {
         showAlert()
     }
@@ -29,6 +28,10 @@ class CreateNewExercise: UIViewController {
         }))
         
         present(alert, animated: true)
+    }
+    
+    func getAllItems() {
+        
     }
     
     /*

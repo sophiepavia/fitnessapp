@@ -24,9 +24,6 @@
 		86C616A325F9667900CABBE1 /* CreateNewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616A225F9667900CABBE1 /* CreateNewExercise.swift */; };
 		86C616A825F96DC200CABBE1 /* NewWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616A725F96DC200CABBE1 /* NewWorkout.swift */; };
 		86C616AD25F96FEA00CABBE1 /* LoadExistingExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616AC25F96FEA00CABBE1 /* LoadExistingExercise.swift */; };
-		86C616B325F9B06B00CABBE1 /* coreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86C616B125F9B06B00CABBE1 /* coreData.xcdatamodeld */; };
-		86C616CA25F9B78800CABBE1 /* CoreData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616C825F9B78700CABBE1 /* CoreData+CoreDataClass.swift */; };
-		86C616CB25F9B78800CABBE1 /* CoreData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616C925F9B78800CABBE1 /* CoreData+CoreDataProperties.swift */; };
 		A0D9B32425E817AF00B93C3A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32325E817AF00B93C3A /* File.swift */; };
 		A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32B25E8197800B93C3A /* BMIViewController.swift */; };
 		A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */; };
@@ -79,9 +76,6 @@
 		86C616A225F9667900CABBE1 /* CreateNewExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewExercise.swift; sourceTree = "<group>"; };
 		86C616A725F96DC200CABBE1 /* NewWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkout.swift; sourceTree = "<group>"; };
 		86C616AC25F96FEA00CABBE1 /* LoadExistingExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadExistingExercise.swift; sourceTree = "<group>"; };
-		86C616B225F9B06B00CABBE1 /* coreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = coreData.xcdatamodel; sourceTree = "<group>"; };
-		86C616C825F9B78700CABBE1 /* CoreData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CoreData+CoreDataClass.swift"; path = "/Users/alexserrano/Documents/PROJECTS/github/fitnessapp/fitApp/fitnessApp/CoreData+CoreDataClass.swift"; sourceTree = "<absolute>"; };
-		86C616C925F9B78800CABBE1 /* CoreData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "CoreData+CoreDataProperties.swift"; path = "/Users/alexserrano/Documents/PROJECTS/github/fitnessapp/fitApp/fitnessApp/CoreData+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
 		8902C071542EEE3B157A0BEC /* Pods-fitnessApp-fitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D9B32325E817AF00B93C3A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A0D9B32B25E8197800B93C3A /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
@@ -144,7 +138,6 @@
 		3380698225D86AB90031A084 /* fitnessApp */ = {
 			isa = PBXGroup;
 			children = (
-				86C616C125F9B6C700CABBE1 /* Core Data */,
 				A0D9B32B25E8197800B93C3A /* BMIViewController.swift */,
 				3380698325D86AB90031A084 /* AppDelegate.swift */,
 				3380698525D86AB90031A084 /* SceneDelegate.swift */,
@@ -162,7 +155,6 @@
 				338069BE25D86DD70031A084 /* Step1ViewController.swift */,
 				3380698C25D86ABA0031A084 /* Assets.xcassets */,
 				3380698E25D86ABA0031A084 /* LaunchScreen.storyboard */,
-				86C616B125F9B06B00CABBE1 /* coreData.xcdatamodeld */,
 				3380699125D86ABA0031A084 /* Info.plist */,
 			);
 			path = fitnessApp;
@@ -184,15 +176,6 @@
 				338069A725D86ABA0031A084 /* Info.plist */,
 			);
 			path = fitnessAppUITests;
-			sourceTree = "<group>";
-		};
-		86C616C125F9B6C700CABBE1 /* Core Data */ = {
-			isa = PBXGroup;
-			children = (
-				86C616C825F9B78700CABBE1 /* CoreData+CoreDataClass.swift */,
-				86C616C925F9B78800CABBE1 /* CoreData+CoreDataProperties.swift */,
-			);
-			path = "Core Data";
 			sourceTree = "<group>";
 		};
 		9A30078D6E1A0E70296CD0F3 /* Frameworks */ = {
@@ -495,9 +478,7 @@
 				A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */,
 				338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */,
 				86C616AD25F96FEA00CABBE1 /* LoadExistingExercise.swift in Sources */,
-				86C616CB25F9B78800CABBE1 /* CoreData+CoreDataProperties.swift in Sources */,
 				333A475C25DEE40600E25965 /* MainPageViewController.swift in Sources */,
-				86C616B325F9B06B00CABBE1 /* coreData.xcdatamodeld in Sources */,
 				E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */,
 				86C616A325F9667900CABBE1 /* CreateNewExercise.swift in Sources */,
 				86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */,
@@ -507,7 +488,6 @@
 				A0D9B32425E817AF00B93C3A /* File.swift in Sources */,
 				3380698425D86AB90031A084 /* AppDelegate.swift in Sources */,
 				3380698625D86AB90031A084 /* SceneDelegate.swift in Sources */,
-				86C616CA25F9B78800CABBE1 /* CoreData+CoreDataClass.swift in Sources */,
 				A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -841,19 +821,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		86C616B125F9B06B00CABBE1 /* coreData.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				86C616B225F9B06B00CABBE1 /* coreData.xcdatamodel */,
-			);
-			currentVersion = 86C616B225F9B06B00CABBE1 /* coreData.xcdatamodel */;
-			path = coreData.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3380697825D86AB90031A084 /* Project object */;
 }
