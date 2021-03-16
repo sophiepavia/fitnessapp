@@ -9,13 +9,52 @@ import UIKit
 
 class LoadExistingExercise: UIViewController {
 
+    //MARK: Properties
+
+    
+    
+    @IBOutlet weak var loadExistingExerciseButton: UIButton!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var feelingSlider: UISlider!
+    //this is so the slider can "snap to" values in
+    //increments of 1
+    let step:Float = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //characteristics of the slider
+        feelingSlider.minimumValue = 0
+        feelingSlider.maximumValue = 3
+        feelingSlider.isContinuous = true
+        feelingSlider.tintColor = UIColor.white
     }
     
-    @IBAction func loadExistingExerciseButton(_ sender: Any) {
+    //making the slider snap to values of 0-3
+    @IBAction func sliderAction(_ sender: UISlider!) {
+        
+        let snapToValue = round(sender.value / step) * step
+        sender.value = snapToValue
+        
+        let sliderValue:Float = sender.value
+        var sliderWords = ""
+
+            if(sliderValue == 0) {
+                sliderWords = "Bad" }
+
+            else if(sliderValue == 1) {
+                sliderWords = "Alright" }
+            
+            else if(sliderValue == 2) {
+                sliderWords = "Pretty Good" }
+
+            else if(sliderValue == 3) {
+                sliderWords = "Great" }
+
+        label.text = String(sliderWords)
+    } //end of sliderAction function
+    
+       @IBAction func loadExistingExerciseButton(_ sender: Any) {
         showAlert()
     }
     func showAlert()
@@ -27,17 +66,6 @@ class LoadExistingExercise: UIViewController {
         }))
         
         present(alert, animated: true)
-    }
-    
+    }  //end of show alert function
+}  //end of class
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
