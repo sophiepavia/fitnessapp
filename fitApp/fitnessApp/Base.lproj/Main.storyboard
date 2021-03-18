@@ -797,8 +797,11 @@ like to focus on?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="ftW-cu-tVm">
-                                <rect key="frame" x="15" y="629" width="378" height="30"/>
+                                <rect key="frame" x="78" y="609" width="249" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="T5J-c4-0W6" eventType="valueChanged" id="BMn-Rr-2fG"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="66B-wU-2fn">
                                 <rect key="frame" x="102" y="684" width="211" height="91"/>
@@ -868,15 +871,26 @@ like to focus on?</string>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alright" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6rC-UD-tGN">
+                                <rect key="frame" x="140" y="646" width="121" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="eDT-Cz-emY"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="0LE-1D-b9A"/>
+                    <connections>
+                        <outlet property="feelingSlider" destination="ftW-cu-tVm" id="tl6-pB-leZ"/>
+                        <outlet property="label" destination="6rC-UD-tGN" id="GYo-6V-Vdu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NfO-Eb-eS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7700" y="-346"/>
+            <point key="canvasLocation" x="7700.0000000000009" y="-346.20535714285711"/>
         </scene>
         <!--Load Existing Exercise-->
         <scene sceneID="VPO-8g-UVn">
@@ -933,8 +947,11 @@ like to focus on?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="qsd-1S-LMj">
-                                <rect key="frame" x="25" y="662" width="378" height="30"/>
+                                <rect key="frame" x="85" y="632" width="251" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderAction:" destination="GwS-AP-8yM" eventType="valueChanged" id="QyS-3n-cXN"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u9T-lu-Yx2">
                                 <rect key="frame" x="112" y="717" width="210.00000000000091" height="91"/>
@@ -946,7 +963,7 @@ like to focus on?</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="How are you feeling?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPL-aB-nEe">
-                                <rect key="frame" x="117" y="616" width="190" height="26"/>
+                                <rect key="frame" x="122" y="605" width="190" height="26"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -958,15 +975,27 @@ like to focus on?</string>
                                 <viewLayoutGuide key="contentLayoutGuide" id="aVQ-JS-6BO"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="EbQ-0r-3Kg"/>
                             </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alright" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MJh-No-mZh">
+                                <rect key="frame" x="137" y="669" width="146" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="3C6-u2-p4N"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="uHi-JA-bFf"/>
+                    <connections>
+                        <outlet property="feelingSlider" destination="qsd-1S-LMj" id="aP3-G9-7MX"/>
+                        <outlet property="label" destination="MJh-No-mZh" id="IlZ-Ur-Cfs"/>
+                        <outlet property="loadExistingExerciseButton" destination="u9T-lu-Yx2" id="noz-Hy-8oe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AVL-hN-ddp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7700" y="-1002"/>
+            <point key="canvasLocation" x="7700.0000000000009" y="-1002.4553571428571"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="02e-ba-3P4">
