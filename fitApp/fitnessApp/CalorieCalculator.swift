@@ -61,6 +61,31 @@ class CalorieCalculator: UIViewController, UIPickerViewDataSource, UIPickerViewA
     }
     
     @IBAction func submit(_ sender: Any) {
+        
+        // Check if the text fields are empty, if they are, ask for user to input value
+        if bodyWeight.text! == "" || bodyFat.text! == ""
+        {
+            var field = ""
+            if bodyWeight.text! == ""
+            {
+                field = "Weight (lbs)"
+            }
+            else if bodyFat.text! == ""
+            {
+                field = "Body Fat"
+            }
+            
+            let alert = UIAlertController(title: "Notification", message: "Input required for the '\(field)' field", preferredStyle: .alert)
+            
+            alert.addAction(UIAlertAction(title: "Okay", style: .default, handler: {action in
+                print("tapped Oaky")
+            }))
+            
+            present(alert, animated: true)
+            
+            return
+        }
+        
         let weight : Float? = Float(bodyWeight.text!)
         let genderNumber : Int = genderValue(gender)
         let weightKg = weight!/2.2
@@ -160,7 +185,7 @@ class CalorieCalculator: UIViewController, UIPickerViewDataSource, UIPickerViewA
         //lose weight
         textView.text = "Calories per day to...\nMAINTAIN weight: \(Int(total2))\nMODERATELY LOSE weight (0.5 lb/week): \(Int(total2*0.9)) \nLOSE weight (1.0 lb/week): \(Int(total2*0.8))\nRAPIDLY LOSE weight (2.0 lb/week) \(Int(total2*0.61))"
     }
-    
+
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         bodyWeight.resignFirstResponder()
         bodyFat.resignFirstResponder()

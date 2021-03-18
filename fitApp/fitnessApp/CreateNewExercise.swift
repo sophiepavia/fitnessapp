@@ -30,10 +30,6 @@ class CreateNewExercise: UIViewController {
         present(alert, animated: true)
     }
     
-    func getAllItems() {
-        
-    }
-    
     /*
     // MARK: - Navigation
 
