@@ -54,9 +54,10 @@ class LoadExistingExercise: UIViewController {
         label.text = String(sliderWords)
     } //end of sliderAction function
     
-       @IBAction func loadExistingExerciseButton(_ sender: Any) {
+    @IBAction func loadExistingExerciseButton(_ sender: Any) {
         showAlert()
     }
+    
     func showAlert()
     {
         let alert = UIAlertController(title: "Notification", message: "This exercise has been succesfully added to your workout!", preferredStyle: .alert)
