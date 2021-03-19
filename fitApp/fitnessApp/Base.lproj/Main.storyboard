@@ -884,8 +884,9 @@ like to focus on?</string>
                     </view>
                     <navigationItem key="navigationItem" id="0LE-1D-b9A"/>
                     <connections>
-                        <outlet property="feelingSlider" destination="ftW-cu-tVm" id="tl6-pB-leZ"/>
-                        <outlet property="label" destination="6rC-UD-tGN" id="GYo-6V-Vdu"/>
+                        <outlet property="createNewExerciseButton" destination="66B-wU-2fn" id="p7n-1X-KjM"/>
+                        <outlet property="feelingSlider" destination="ftW-cu-tVm" id="OnT-DM-O6s"/>
+                        <outlet property="label" destination="6rC-UD-tGN" id="Vvc-bs-AkT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NfO-Eb-eS0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

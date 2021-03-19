@@ -9,11 +9,46 @@ import UIKit
 
 class CreateNewExercise: UIViewController {
 
+    @IBOutlet weak var createNewExerciseButton: UIButton!
+    @IBOutlet weak var feelingSlider: UISlider!
+    @IBOutlet weak var label: UILabel!
+    //this is so the slider can "snap to" values in
+    //increments of 1
+    let step:Float = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        //characteristics of the slider
+        feelingSlider.minimumValue = 0
+        feelingSlider.maximumValue = 3
+        feelingSlider.isContinuous = true
+        feelingSlider.tintColor = UIColor.white
     }
+    
+    //making the slider snap to values of 0-3
+    @IBAction func sliderAction(_ sender: UISlider!) {
+        
+        let snapToValue = round(sender.value / step) * step
+        sender.value = snapToValue
+        
+        let sliderValue:Float = sender.value
+        var sliderWords = ""
+
+            if(sliderValue == 0) {
+                sliderWords = "Bad" }
+
+            else if(sliderValue == 1) {
+                sliderWords = "Alright" }
+            
+            else if(sliderValue == 2) {
+                sliderWords = "Pretty Good" }
+
+            else if(sliderValue == 3) {
+                sliderWords = "Great" }
+
+        label.text = String(sliderWords)
+    } //end of sliderAction function
     
     @IBAction func createNewExerciseButton(_ sender: Any) {
         showAlert()
