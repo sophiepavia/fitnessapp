@@ -20,11 +20,11 @@
 		338069A625D86ABA0031A084 /* fitnessAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069A525D86ABA0031A084 /* fitnessAppUITests.swift */; };
 		338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338069BE25D86DD70031A084 /* Step1ViewController.swift */; };
 		688EC7BB7636D33A3056E157 /* Pods_fitnessApp_fitnessAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02088EF0E5B263B01862752F /* Pods_fitnessApp_fitnessAppUITests.framework */; };
+		861AB09226084E6400B08502 /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861AB09126084E6400B08502 /* ExerciseTableViewController.swift */; };
 		86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86926A0125E19CB7007D52DF /* CalorieCalculator.swift */; };
 		86C616A325F9667900CABBE1 /* CreateNewExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616A225F9667900CABBE1 /* CreateNewExercise.swift */; };
 		86C616A825F96DC200CABBE1 /* NewWorkout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616A725F96DC200CABBE1 /* NewWorkout.swift */; };
 		86C616AD25F96FEA00CABBE1 /* LoadExistingExercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C616AC25F96FEA00CABBE1 /* LoadExistingExercise.swift */; };
-		86CC80F6260407410099D54C /* ExerciseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CC80F4260407410099D54C /* ExerciseTableViewController.swift */; };
 		A0D9B32425E817AF00B93C3A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32325E817AF00B93C3A /* File.swift */; };
 		A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32B25E8197800B93C3A /* BMIViewController.swift */; };
 		A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */; };
@@ -73,11 +73,11 @@
 		5F9427D2E81E0BB7E4B970F2 /* Pods-fitnessApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp.release.xcconfig"; path = "Target Support Files/Pods-fitnessApp/Pods-fitnessApp.release.xcconfig"; sourceTree = "<group>"; };
 		69C412693D83237AED7872C5 /* Pods-fitnessApp-fitnessAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp-fitnessAppUITests.release.xcconfig"; path = "Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 		73F7E21E98CA2D2C56D5449D /* Pods-fitnessApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp.debug.xcconfig"; path = "Target Support Files/Pods-fitnessApp/Pods-fitnessApp.debug.xcconfig"; sourceTree = "<group>"; };
+		861AB09126084E6400B08502 /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		86926A0125E19CB7007D52DF /* CalorieCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalorieCalculator.swift; sourceTree = "<group>"; };
 		86C616A225F9667900CABBE1 /* CreateNewExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewExercise.swift; sourceTree = "<group>"; };
 		86C616A725F96DC200CABBE1 /* NewWorkout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWorkout.swift; sourceTree = "<group>"; };
 		86C616AC25F96FEA00CABBE1 /* LoadExistingExercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadExistingExercise.swift; sourceTree = "<group>"; };
-		86CC80F4260407410099D54C /* ExerciseTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ExerciseTableViewController.swift; path = ../../../../../../Downloads/ExerciseTableViewController.swift; sourceTree = "<group>"; };
 		8902C071542EEE3B157A0BEC /* Pods-fitnessApp-fitnessAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-fitnessApp-fitnessAppUITests/Pods-fitnessApp-fitnessAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0D9B32325E817AF00B93C3A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A0D9B32B25E8197800B93C3A /* BMIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 				86C616AC25F96FEA00CABBE1 /* LoadExistingExercise.swift */,
 				86C616A725F96DC200CABBE1 /* NewWorkout.swift */,
 				86C616A225F9667900CABBE1 /* CreateNewExercise.swift */,
-				86CC80F4260407410099D54C /* ExerciseTableViewController.swift */,
+				861AB09126084E6400B08502 /* ExerciseTableViewController.swift */,
 				A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */,
 				86926A0125E19CB7007D52DF /* CalorieCalculator.swift */,
 				333A475B25DEE40600E25965 /* MainPageViewController.swift */,
@@ -479,6 +479,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */,
+				861AB09226084E6400B08502 /* ExerciseTableViewController.swift in Sources */,
 				338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */,
 				86C616AD25F96FEA00CABBE1 /* LoadExistingExercise.swift in Sources */,
 				333A475C25DEE40600E25965 /* MainPageViewController.swift in Sources */,
@@ -489,7 +490,6 @@
 				86C616A825F96DC200CABBE1 /* NewWorkout.swift in Sources */,
 				3380698825D86AB90031A084 /* ViewController.swift in Sources */,
 				A0D9B32425E817AF00B93C3A /* File.swift in Sources */,
-				86CC80F6260407410099D54C /* ExerciseTableViewController.swift in Sources */,
 				3380698425D86AB90031A084 /* AppDelegate.swift in Sources */,
 				3380698625D86AB90031A084 /* SceneDelegate.swift in Sources */,
 				A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */,

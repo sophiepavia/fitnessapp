@@ -109,7 +109,7 @@ class HomeBoardViewController: UIViewController {
         if (userDefaults.value(forKey: "WEIGHT") != nil){
     
             let story = UIStoryboard(name: "Main", bundle: nil)
-                  let controller = story.instantiateViewController(identifier: "Home") as! UIViewController
+                  let controller = story.instantiateViewController(identifier: "Home")
                   self.present(controller, animated: true, completion: nil)
            }
         

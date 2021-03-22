@@ -1053,8 +1053,8 @@ like to focus on?</string>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="exLabel" destination="6TL-0x-Zgq" id="Y61-4h-pyY"/>
-                                    <outlet property="informationButton" destination="IJd-s3-RBy" id="olc-Nq-tlx"/>
+                                    <outlet property="exLabel" destination="6TL-0x-Zgq" id="IPb-a0-U8y"/>
+                                    <outlet property="informationButton" destination="IJd-s3-RBy" id="7F0-kw-QEj"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
