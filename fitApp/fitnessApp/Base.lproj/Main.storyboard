@@ -612,7 +612,7 @@ like to focus on?</string>
         <!--Profile-->
         <scene sceneID="qoI-4T-R7H">
             <objects>
-                <viewController storyboardIdentifier="ProfileHome" title="Profile" id="2bT-xg-bVn" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileHome" title="Profile" id="2bT-xg-bVn" customClass="ProfilePageViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hD9-Lq-gX0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -624,15 +624,31 @@ like to focus on?</string>
                                 <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nfu-Vt-JMv">
+                                <rect key="frame" x="333" y="30" width="30" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="imagePicker:" destination="2bT-xg-bVn" eventType="touchUpInside" id="Lmu-xz-K9d"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="IRa-vt-19e">
+                                <rect key="frame" x="114" y="114" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SOP-8f-fHx"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
                     <navigationItem key="navigationItem" id="EtR-xK-vFH"/>
+                    <connections>
+                        <outlet property="imageVIew" destination="IRa-vt-19e" id="mlB-bT-JzF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7DO-js-clH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6838" y="96"/>
+            <point key="canvasLocation" x="6837.68115942029" y="95.758928571428569"/>
         </scene>
         <!--Workouts-->
         <scene sceneID="a1x-PH-gJ3">
@@ -1160,6 +1176,7 @@ like to focus on?</string>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="google_image" width="320" height="73"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="profile" width="188" height="154"/>
         <image name="victor-freitas-JbI04nYfaJk-unsplash" width="2592" height="1728"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
