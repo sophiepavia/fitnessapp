@@ -38,13 +38,18 @@ class ProfilePageViewController: UIViewController, UIImagePickerControllerDelega
         super.viewDidLoad()
         title = "Update Profile Pic"
         
+        
+        if(imageVIew.image != nil)
+        {
         let data = UserDefaults.standard.object(forKey: "savedImage") as! NSData
-        imageVIew.image = UIImage(data: data as Data)
-        imageVIew.layer.borderWidth = 1
-        imageVIew.layer.masksToBounds = false
-        imageVIew.layer.borderColor = UIColor.black.cgColor
-        imageVIew.layer.cornerRadius = imageVIew.frame.height/2
-        imageVIew.clipsToBounds = true
+            imageVIew.image = UIImage(data: data as Data)
+            imageVIew.layer.borderWidth = 1
+            imageVIew.layer.masksToBounds = false
+            imageVIew.layer.borderColor = UIColor.black.cgColor
+            imageVIew.layer.cornerRadius = imageVIew.frame.height/2
+            imageVIew.clipsToBounds = true
+        }
+        
     
     }
     /*
