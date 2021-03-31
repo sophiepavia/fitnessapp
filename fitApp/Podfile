@@ -5,7 +5,11 @@ target 'fitnessApp' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for fitnessApp
+  # Pods for charts
+  pod 'Charts'
+  pod 'TinyConstraints'
+
+  # Pods for Google Sign In API
   pod 'GoogleSignIn'
 
   target 'fitnessAppTests' do
