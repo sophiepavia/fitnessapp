@@ -31,6 +31,7 @@
 		A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */; };
 		E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */; };
 		E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */; };
+		E8E8F7EF2613D2EB00F5E086 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E8F7EE2613D2EB00F5E086 /* HomePageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		BB6CA564DDFF4ED613C7E2EB /* Pods_fitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
 		E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
+		E8E8F7EE2613D2EB00F5E086 /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				3380698525D86AB90031A084 /* SceneDelegate.swift */,
 				3380698725D86AB90031A084 /* ViewController.swift */,
 				3380698925D86AB90031A084 /* Main.storyboard */,
+				E8E8F7EE2613D2EB00F5E086 /* HomePageViewController.swift */,
 				3359B357260AB5C900C2E110 /* ProfilePageViewController.swift */,
 				86C616AC25F96FEA00CABBE1 /* LoadExistingExercise.swift */,
 				86C616A725F96DC200CABBE1 /* NewWorkout.swift */,
@@ -484,6 +487,7 @@
 				A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */,
 				861AB09226084E6400B08502 /* ExerciseTableViewController.swift in Sources */,
 				338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */,
+				E8E8F7EF2613D2EB00F5E086 /* HomePageViewController.swift in Sources */,
 				86C616AD25F96FEA00CABBE1 /* LoadExistingExercise.swift in Sources */,
 				333A475C25DEE40600E25965 /* MainPageViewController.swift in Sources */,
 				E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */,
@@ -753,7 +757,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8902C071542EEE3B157A0BEC /* Pods-fitnessApp-fitnessAppUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = fitnessAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -773,7 +777,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69C412693D83237AED7872C5 /* Pods-fitnessApp-fitnessAppUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = fitnessAppUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

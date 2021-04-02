@@ -564,7 +564,7 @@ like to focus on?</string>
         <!--Home-->
         <scene sceneID="1wW-68-Nky">
             <objects>
-                <viewController title="Home" id="arv-1w-t8A" sceneMemberID="viewController">
+                <viewController title="Home" id="arv-1w-t8A" customClass="HomePageViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vHX-iR-vxj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
