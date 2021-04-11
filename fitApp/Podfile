@@ -8,6 +8,7 @@ target 'fitnessApp' do
   # Pods for charts
   pod 'Charts'
   pod 'TinyConstraints'
+  pod 'GTMAppAuth'
 
   # Pods for Google Sign In API
   pod 'GoogleSignIn'
