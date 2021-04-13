@@ -18,7 +18,7 @@ PODS:
   - TinyConstraints (4.0.1)
 
 DEPENDENCIES:
-  - Charts
+  - Charts (~> 3.6.0)
   - GoogleSignIn
   - GTMAppAuth
   - TinyConstraints
@@ -40,6 +40,6 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: b3503b20a988c4e20cc189aa798fd18220133f52
   TinyConstraints: 8dd91295e56797648c7bc335dd20e1d91ec4c192
 
-PODFILE CHECKSUM: 2d66129dadfdc043e99762b2d2f75bf574ce3b4f
+PODFILE CHECKSUM: 3762250972cabb7c06787b392becbbd9d17a5a42
 
 COCOAPODS: 1.10.1

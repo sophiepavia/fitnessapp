@@ -6,7 +6,7 @@ target 'fitnessApp' do
   use_frameworks!
 
   # Pods for charts
-  pod 'Charts'
+  pod 'Charts', '~> 3.6.0'
   pod 'TinyConstraints'
   pod 'GTMAppAuth'
 
