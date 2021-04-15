@@ -42,7 +42,7 @@ class APIViewController: UIViewController, UITableViewDataSource, UITableViewDel
         // Get the location to be shown
         let item: LocationModel = feedItems[indexPath.row] as! LocationModel
         // Get references to labels of cell
-        myCell.textLabel!.text = item.FirstName! + " " + item.LastName! + " " + item.Email!
+        myCell.textLabel!.text = item.ExerciseName! + "-" + item.Reps! + "-" + item.Sets! + "-" + item.Focus! + "-" + item.Description!
         
         return myCell
     }

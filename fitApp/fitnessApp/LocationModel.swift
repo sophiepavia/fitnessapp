@@ -4,11 +4,12 @@ class LocationModel: NSObject {
     
     //properties
     
-    var FirstName: String?
-    var LastName: String?
-    var UserId: String?
-    var Email: String?
-    var Gender: String?
+    var ExerciseName: String?
+    var Weight: String?
+    var Reps: String?
+    var Sets: String?
+    var Focus: String?
+    var Description: String?
     
     
     //empty constructor
@@ -20,13 +21,14 @@ class LocationModel: NSObject {
     
     //construct with @name, @address, @latitude, and @longitude parameters
     
-    init(FirstName: String, LastName: String, UserId: String, Email: String, Gender: String) {
+    init(ExerciseName: String, Weight: String, Reps: String, Sets: String, Focus: String, Description: String) {
         
-        self.FirstName = FirstName
-        self.LastName = LastName
-        self.UserId = UserId
-        self.Email = Email
-        self.Gender = Gender
+        self.ExerciseName = ExerciseName
+        self.Weight = Weight
+        self.Reps = Reps
+        self.Sets = Sets
+        self.Focus = Focus
+        self.Description = Description
         
     }
     
@@ -34,7 +36,7 @@ class LocationModel: NSObject {
     //prints object's current state
     
     override var description: String {
-        return "FirstName: \(FirstName ?? "None"), LastName: \(LastName ?? "None"), UserId: \(UserId ?? "None"), Email: \(Email ?? "None"), Gender: \(Gender ?? "None")"
+        return "ExerciseName: \(ExerciseName ?? "None"), Weight: \(Weight ?? "None"), Reps: \(Reps ?? "None"), Sets: \(Sets ?? "None"), Focus: \(Focus ?? "None") Description: \(Description ?? "None" )"
         
     }
     

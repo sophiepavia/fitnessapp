@@ -347,9 +347,6 @@ like to focus on?</string>
                                 <rect key="frame" x="77" y="433" width="261" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="API TEST"/>
-                                <connections>
-                                    <segue destination="r0u-WK-Sjn" kind="presentation" modalPresentationStyle="fullScreen" id="Igu-HZ-07g"/>
-                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="4M0-1P-Pbf"/>
@@ -366,7 +363,7 @@ like to focus on?</string>
             <objects>
                 <viewController id="cW1-Sg-pCX" customClass="APIViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A2O-5G-Kno">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="k8O-JR-j6U">
@@ -395,7 +392,7 @@ like to focus on?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3IT-Yi-UJo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7028.985507246377" y="1519.4196428571429"/>
+            <point key="canvasLocation" x="7700" y="-1694"/>
         </scene>
         <!--Calorie Calculator-->
         <scene sceneID="S3u-6P-IQL">
@@ -772,12 +769,6 @@ like to focus on?</string>
                                     <segue destination="561-Nb-puj" kind="presentation" modalPresentationStyle="fullScreen" id="bfe-1u-gy6"/>
                                 </connections>
                             </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h9a-Nf-uxq">
-                                <rect key="frame" x="20" y="408" width="374" height="314"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <viewLayoutGuide key="contentLayoutGuide" id="dtl-8y-yjf"/>
-                                <viewLayoutGuide key="frameLayoutGuide" id="aFl-r0-rHk"/>
-                            </scrollView>
                             <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KPo-2w-wje">
                                 <rect key="frame" x="228" y="145" width="166" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -801,6 +792,18 @@ like to focus on?</string>
                                 </state>
                                 <connections>
                                     <segue destination="GwS-AP-8yM" kind="modal" id="PcP-dY-biJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGi-bC-6f8">
+                                <rect key="frame" x="94" y="408" width="218" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="VIEW EXERCISES">
+                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="r0u-WK-Sjn" kind="show" id="Ohs-6q-Pak"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -944,6 +947,12 @@ like to focus on?</string>
                     </view>
                     <navigationItem key="navigationItem" id="0LE-1D-b9A"/>
                     <connections>
+                        <outlet property="Description" destination="Kc0-zg-2At" id="9Yc-Zj-WKj"/>
+                        <outlet property="ExerciseName" destination="WvQ-4L-NUd" id="TuU-pa-va9"/>
+                        <outlet property="Focus" destination="A94-xw-4iZ" id="szW-XI-8VF"/>
+                        <outlet property="Reps" destination="naF-vP-1cP" id="zoN-bH-cUx"/>
+                        <outlet property="Sets" destination="Y20-0d-MVi" id="P0N-cp-iCE"/>
+                        <outlet property="Weight" destination="rhg-80-7ac" id="ORA-4g-Jbj"/>
                         <outlet property="createNewExerciseButton" destination="66B-wU-2fn" id="p7n-1X-KjM"/>
                         <outlet property="feelingSlider" destination="ftW-cu-tVm" id="OnT-DM-O6s"/>
                         <outlet property="label" destination="6rC-UD-tGN" id="Vvc-bs-AkT"/>
@@ -1214,8 +1223,9 @@ like to focus on?</string>
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r0u-WK-Sjn" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="Ig8-B0-ucj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="qvf-WU-KHm">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -1225,11 +1235,11 @@ like to focus on?</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="437-Qn-Rvj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6118.840579710145" y="1519.4196428571429"/>
+            <point key="canvasLocation" x="6838" y="-1547"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kfr-n2-jgw"/>
+        <segue reference="ydu-ES-SPR"/>
         <segue reference="WNt-QJ-ZeS"/>
         <segue reference="7OD-BJ-quc"/>
     </inferredMetricsTieBreakers>

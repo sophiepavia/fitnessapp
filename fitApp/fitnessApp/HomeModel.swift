@@ -33,6 +33,7 @@ class HomeModel: NSObject, URLSessionDataDelegate {
     }
     
     func parseJSON(_ data:Data) {
+        print("in here")
             
             var jsonResult = NSArray()
             
@@ -53,22 +54,16 @@ class HomeModel: NSObject, URLSessionDataDelegate {
                 jsonElement = jsonResult[i] as! NSDictionary
                 
                 let location = LocationModel()
-                
                 //the following insures none of the JsonElement values are nil through optional binding
-                if let FirstName = jsonElement["FirstName"] as? String,
-                    let LastName = jsonElement["LastName"] as? String,
-                    let UserId = jsonElement["UserId"] as? String,
-                    let Email = jsonElement["Email"] as? String,
-                    let Gender = jsonElement["Gender"] as? String
-                {
+                location.ExerciseName = jsonElement["ExerciseName"] as? String
+                    location.Weight = jsonElement["Weight"] as? String
+                    location.Reps = jsonElement["Reps"] as? String
+                    location.Sets = jsonElement["Sets"] as? String
+                    location.Focus = jsonElement["Focus"] as? String
+                    location.Description = jsonElement["Description"] as? String
+                
                     
-                    location.FirstName = FirstName
-                    location.LastName = LastName
-                    location.UserId = UserId
-                    location.Email = Email
-                    location.Gender = Gender
-                    
-                }
+                
                 
                 locations.add(location)
                 
