@@ -178,7 +178,6 @@ not say</string>
         <!--Step2 View Controller-->
         <scene sceneID="OX7-5m-ggF">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5gx-Vc-X34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="Moa-aQ-0WF" customClass="Step2ViewController" customModule="fitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hDa-dc-yZf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -188,6 +187,7 @@ not say</string>
                     </view>
                     <navigationItem key="navigationItem" id="H4y-nB-aN0"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5gx-Vc-X34" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3472.4637681159425" y="90.401785714285708"/>
         </scene>
