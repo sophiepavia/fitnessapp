@@ -20,12 +20,27 @@ class HomeBoardViewController: UIViewController {
     @IBOutlet weak var statusText: UILabel!
     @IBOutlet weak var signInButton: GIDSignInButton!
     @IBOutlet weak var signOutButton: UIButton!
-    @IBOutlet weak var disconnectButton: UIButton!
+    @IBOutlet weak var signInLabel: UILabel!
+    @IBOutlet weak var signOutLabel: UILabel!
     
     let userDefaults = UserDefaults()
     
+    
+    func assignbackground(){
+          let background = UIImage(named: "Hexagon background")
+          var imageView : UIImageView!
+          imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+          imageView.clipsToBounds = true
+          imageView.image = background
+          imageView.center = view.center
+          view.addSubview(imageView)
+          self.view.sendSubviewToBack(imageView)
+      }
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
+        
     
     GIDSignIn.sharedInstance()?.presentingViewController = self
 
@@ -37,7 +52,6 @@ class HomeBoardViewController: UIViewController {
         name: NSNotification.Name(rawValue: "ToggleAuthUINotification"),
         object: nil)
 
-    statusText.text = "Initialized Swift app..."
     toggleAuthUI()
     }
 
@@ -55,16 +69,8 @@ class HomeBoardViewController: UIViewController {
     //If the user clicks sign out
     @IBAction func didTapSignOut(_ sender: AnyObject) {
     GIDSignIn.sharedInstance().signOut()
-    statusText.text = "Signed out."
+   
     toggleAuthUI()
-    }
-
-    //If the user clicks disconnect
-    @IBAction func didTapDisconnect(_ sender: AnyObject) {
-    GIDSignIn.sharedInstance().disconnect()
-
-    statusText.text = "Disconnecting."
-
     }
 
     func toggleAuthUI() {
@@ -72,14 +78,15 @@ class HomeBoardViewController: UIViewController {
     {
       // Signed in
       signInButton.isHidden = true
+        signInLabel.isHidden = true
       signOutButton.isHidden = false
-      disconnectButton.isHidden = false
+        signOutLabel.isHidden = false
       }
       else {
       signInButton.isHidden = false
+        signInLabel.isHidden = false
       signOutButton.isHidden = true
-      disconnectButton.isHidden = true
-      statusText.text = "Google Sign in\niOS Demo"
+        signOutLabel.isHidden = true
       }
     }
 
@@ -98,7 +105,6 @@ class HomeBoardViewController: UIViewController {
       self.toggleAuthUI()
       if notification.userInfo != nil {
         guard let userInfo = notification.userInfo as? [String:String] else { return }
-        self.statusText.text = userInfo["statusText"]!
       }
     }
   }

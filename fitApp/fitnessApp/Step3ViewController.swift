@@ -17,11 +17,22 @@ class Step3ViewController: UIViewController {
     @IBOutlet weak var weightText: UITextField!
     @IBOutlet weak var heightText: UITextField!
    
-  
     
+    func assignbackground(){
+          let background = UIImage(named: "victor-freitas-JbI04nYfaJk-unsplash")
+          var imageView : UIImageView!
+          imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+          imageView.clipsToBounds = true
+          imageView.image = background
+          imageView.center = view.center
+          view.addSubview(imageView)
+          self.view.sendSubviewToBack(imageView)
+      }
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        assignbackground()
         
         if let savedWeight = userDefaults.value(forKey: "WEIGHT") as? String {
             weightText.text = savedWeight

@@ -34,7 +34,10 @@
 		A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D9B32B25E8197800B93C3A /* BMIViewController.swift */; };
 		A0F1DF6525F3ECAC003D7A3B /* HomeBoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */; };
 		E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */; };
-		E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */; };
+		E838B4C7262D0D99001A8725 /* Main ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B4C6262D0D99001A8725 /* Main ViewController.swift */; };
+		E838B4CC262D0EB3001A8725 /* Workouts ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B4CB262D0EB3001A8725 /* Workouts ViewController.swift */; };
+		E838B4D1262D0FB7001A8725 /* More ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B4D0262D0FB7001A8725 /* More ViewController.swift */; };
+		E838B4DE262D198E001A8725 /* LogNewExercise ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E838B4DD262D198E001A8725 /* LogNewExercise ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +97,10 @@
 		A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBoardViewController.swift; sourceTree = "<group>"; };
 		BB6CA564DDFF4ED613C7E2EB /* Pods_fitnessApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fitnessApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3ViewController.swift; sourceTree = "<group>"; };
-		E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2ViewController.swift; sourceTree = "<group>"; };
+		E838B4C6262D0D99001A8725 /* Main ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main ViewController.swift"; sourceTree = "<group>"; };
+		E838B4CB262D0EB3001A8725 /* Workouts ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Workouts ViewController.swift"; sourceTree = "<group>"; };
+		E838B4D0262D0FB7001A8725 /* More ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "More ViewController.swift"; sourceTree = "<group>"; };
+		E838B4DD262D198E001A8725 /* LogNewExercise ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LogNewExercise ViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,9 @@
 				3380698525D86AB90031A084 /* SceneDelegate.swift */,
 				3380698725D86AB90031A084 /* ViewController.swift */,
 				3380698925D86AB90031A084 /* Main.storyboard */,
+				E838B4DD262D198E001A8725 /* LogNewExercise ViewController.swift */,
+				E838B4D0262D0FB7001A8725 /* More ViewController.swift */,
+				E838B4CB262D0EB3001A8725 /* Workouts ViewController.swift */,
 				A002B4F12622630800A098EF /* APIViewController.swift */,
 				3359B357260AB5C900C2E110 /* ProfilePageViewController.swift */,
 				86C616AC25F96FEA00CABBE1 /* LoadExistingExercise.swift */,
@@ -165,9 +174,9 @@
 				A0F1DF6425F3ECAC003D7A3B /* HomeBoardViewController.swift */,
 				86926A0125E19CB7007D52DF /* CalorieCalculator.swift */,
 				333A475B25DEE40600E25965 /* MainPageViewController.swift */,
-				E8D9E43525DB6ED900DAB807 /* Step2ViewController.swift */,
 				A0D9B32325E817AF00B93C3A /* File.swift */,
 				E823293E25DCAE21001D9DE0 /* Step3ViewController.swift */,
+				E838B4C6262D0D99001A8725 /* Main ViewController.swift */,
 				338069BE25D86DD70031A084 /* Step1ViewController.swift */,
 				3380698C25D86ABA0031A084 /* Assets.xcassets */,
 				3380698E25D86ABA0031A084 /* LaunchScreen.storyboard */,
@@ -500,10 +509,11 @@
 				338069BF25D86DD70031A084 /* Step1ViewController.swift in Sources */,
 				86C616AD25F96FEA00CABBE1 /* LoadExistingExercise.swift in Sources */,
 				333A475C25DEE40600E25965 /* MainPageViewController.swift in Sources */,
-				E8D9E43625DB6ED900DAB807 /* Step2ViewController.swift in Sources */,
 				86C616A325F9667900CABBE1 /* CreateNewExercise.swift in Sources */,
+				E838B4DE262D198E001A8725 /* LogNewExercise ViewController.swift in Sources */,
 				3359B358260AB5C900C2E110 /* ProfilePageViewController.swift in Sources */,
 				86926A0225E19CB7007D52DF /* CalorieCalculator.swift in Sources */,
+				E838B4CC262D0EB3001A8725 /* Workouts ViewController.swift in Sources */,
 				A002B4FC262264B600A098EF /* LocationModel.swift in Sources */,
 				E823293F25DCAE21001D9DE0 /* Step3ViewController.swift in Sources */,
 				86C616A825F96DC200CABBE1 /* NewWorkout.swift in Sources */,
@@ -513,6 +523,8 @@
 				3380698625D86AB90031A084 /* SceneDelegate.swift in Sources */,
 				A0D9B32C25E8197800B93C3A /* BMIViewController.swift in Sources */,
 				A002B4F22622630800A098EF /* APIViewController.swift in Sources */,
+				E838B4C7262D0D99001A8725 /* Main ViewController.swift in Sources */,
+				E838B4D1262D0FB7001A8725 /* More ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

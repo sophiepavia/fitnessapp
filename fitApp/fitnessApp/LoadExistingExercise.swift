@@ -20,6 +20,18 @@ class LoadExistingExercise: UIViewController {
     //increments of 1
     let step:Float = 1
     
+    func assignbackground(){
+          let background = UIImage(named: "victor-freitas-JbI04nYfaJk-unsplash")
+          var imageView : UIImageView!
+          imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+          imageView.clipsToBounds = true
+          imageView.image = background
+          imageView.center = view.center
+          view.addSubview(imageView)
+          self.view.sendSubviewToBack(imageView)
+      }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +40,7 @@ class LoadExistingExercise: UIViewController {
         feelingSlider.maximumValue = 3
         feelingSlider.isContinuous = true
         feelingSlider.tintColor = UIColor.white
+        assignbackground()
     }
     
     //making the slider snap to values of 0-3

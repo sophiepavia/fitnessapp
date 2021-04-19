@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "videoblocks-black-hexagon-background-3d-render_riwskh-vg_thumbnail-full01.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "videoblocks-black-hexagon-background-3d-render_riwskh-vg_thumbnail-full01-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "videoblocks-black-hexagon-background-3d-render_riwskh-vg_thumbnail-full01-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

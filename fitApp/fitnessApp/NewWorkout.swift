@@ -11,6 +11,18 @@ class NewWorkout: UIViewController {
     
     @IBOutlet weak var dateTextField: UITextField!
 
+    func assignbackground(){
+          let background = UIImage(named: "victor-freitas-JbI04nYfaJk-unsplash")
+          var imageView : UIImageView!
+          imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+          imageView.clipsToBounds = true
+          imageView.image = background
+          imageView.center = view.center
+          view.addSubview(imageView)
+          self.view.sendSubviewToBack(imageView)
+      }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -18,6 +30,7 @@ class NewWorkout: UIViewController {
         df.dateStyle = .short
         
         dateTextField.text = df.string(from: Date())
+        assignbackground()
 
         // Do any additional setup after loading the view.
     }

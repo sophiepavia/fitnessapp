@@ -16,6 +16,19 @@ class CalorieCalculator: UIViewController, UIPickerViewDataSource, UIPickerViewA
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var activity: UIPickerView!
     
+    
+    func assignbackground(){
+          let background = UIImage(named: "Hexagon background")
+          var imageView : UIImageView!
+          imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+          imageView.clipsToBounds = true
+          imageView.image = background
+          imageView.center = view.center
+          view.addSubview(imageView)
+          self.view.sendSubviewToBack(imageView)
+      }
+    
     //levels of activity
     let activities = ["Very Light", "Light", "Moderate", "Heavy", "Very Heavy"]
     var activityChoice : String = ""
@@ -45,6 +58,7 @@ class CalorieCalculator: UIViewController, UIPickerViewDataSource, UIPickerViewA
         bodyFat.delegate = self
         // Do any additional setup after loading
         // the view.
+        assignbackground()
     }
     
     //male or female
