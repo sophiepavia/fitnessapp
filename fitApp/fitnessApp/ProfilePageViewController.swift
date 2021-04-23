@@ -9,6 +9,10 @@ import UIKit
 
 class ProfilePageViewController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
     @IBOutlet var imageVIew: UIImageView!
+    @IBOutlet weak var label1: UILabel!
+    @IBOutlet weak var label2: UILabel!
+    @IBOutlet weak var label3: UILabel!
+    @IBOutlet weak var label4: UILabel!
     @IBAction func imagePicker(_ sender: Any) {
         let picker = UIImagePickerController()
         picker.allowsEditing = false
@@ -16,6 +20,17 @@ class ProfilePageViewController: UIViewController, UIImagePickerControllerDelega
         
         self.present(picker, animated: true)
     }
+    func assignbackground(){
+          let background = UIImage(named: "Hexagon background")
+          var imageView : UIImageView!
+          imageView = UIImageView(frame: view.bounds)
+        imageView.contentMode =  UIView.ContentMode.scaleAspectFill
+          imageView.clipsToBounds = true
+          imageView.image = background
+          imageView.center = view.center
+          view.addSubview(imageView)
+          self.view.sendSubviewToBack(imageView)
+      }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
     
@@ -37,10 +52,16 @@ class ProfilePageViewController: UIViewController, UIImagePickerControllerDelega
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        assignbackground()
         title = "Update Profile Pic"
         
+        label1.textColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
+        label2.textColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
+        label3.textColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
+        label4.textColor = UIColor(red:1.00, green:1.00, blue:1.00, alpha:1.0)
+
         
-        if(imageVIew.image != nil)
+        if(UserDefaults.standard.object(forKey: "savedImage") as? NSData != nil)
         {
         let data = UserDefaults.standard.object(forKey: "savedImage") as! NSData
             imageVIew.image = UIImage(data: data as Data)
