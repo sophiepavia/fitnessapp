@@ -115,48 +115,73 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgr-PK-deJ">
-                                <rect key="frame" x="246" y="274" width="131" height="135"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wgr-PK-deJ">
+                                <rect key="frame" x="244" y="273" width="131" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Female">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Female">
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="24" name="Copperplate"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="femaleAction:" destination="pPu-BY-Dwe" eventType="touchUpInside" id="t3I-IN-qGB"/>
                                     <segue destination="MlM-q5-avc" kind="show" id="fyT-fN-fdv"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="What's your gender?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-XK-ej7">
-                                <rect key="frame" x="35.379420521528573" y="128" width="339.99999999999977" height="112.00000000000014"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yUa-XK-ej7">
+                                <rect key="frame" x="36" y="128" width="339.99999999999977" height="112.00000000000014"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
-                                <color key="textColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="What's your gender?">
+                                        <attributes>
+                                            <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                            <font key="NSFont" size="34" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkk-Rc-j6P">
-                                <rect key="frame" x="20" y="274" width="131" height="135"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jkk-Rc-j6P">
+                                <rect key="frame" x="36" y="273" width="131" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Male">
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Male">
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="24" name="Copperplate"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="maleAction:" destination="pPu-BY-Dwe" eventType="touchUpInside" id="Fb0-xl-x3H"/>
                                     <segue destination="MlM-q5-avc" kind="show" id="ZnP-e2-iQo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="SO2-rv-ZUe">
-                                <rect key="frame" x="139.83610668885376" y="463" width="131" height="135.00000000000003"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="characterWrap" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SO2-rv-ZUe">
+                                <rect key="frame" x="140" y="447" width="131" height="135.00000000000003"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal">
-                                    <string key="title">Rather 
+                                    <attributedString key="attributedTitle">
+                                        <fragment>
+                                            <string key="content">Rather 
 not say</string>
-                                    <color key="titleColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <attributes>
+                                                <color key="NSColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="24" name="Copperplate"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="otherAction:" destination="pPu-BY-Dwe" eventType="touchUpInside" id="fGD-7n-HN0"/>
@@ -198,10 +223,6 @@ not say</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="38"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                             </textField>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="victor-freitas-JbI04nYfaJk-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="Jl1-Xk-AHq">
-                                <rect key="frame" x="-23" y="441" width="461" height="421"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxl-FI-MYq">
                                 <rect key="frame" x="160" y="378" width="88" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -218,7 +239,6 @@ not say</string>
                     <navigationItem key="navigationItem" id="2pc-oO-WI5"/>
                     <connections>
                         <outlet property="heightText" destination="40q-aB-1kA" id="VOZ-vF-agY"/>
-                        <outlet property="image" destination="Jl1-Xk-AHq" id="wzW-u1-U4s"/>
                         <outlet property="weightText" destination="dKP-Gb-pxD" id="MWE-nO-hnQ"/>
                     </connections>
                 </viewController>
@@ -1447,7 +1467,7 @@ not say</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ydu-ES-SPR"/>
+        <segue reference="kfr-n2-jgw"/>
         <segue reference="p7l-jp-v55"/>
         <segue reference="wdf-MU-ioX"/>
     </inferredMetricsTieBreakers>
@@ -1457,7 +1477,6 @@ not say</string>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="profile" width="188" height="154"/>
-        <image name="victor-freitas-JbI04nYfaJk-unsplash" width="2592" height="1728"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -19,7 +19,7 @@ class Step3ViewController: UIViewController {
    
     
     func assignbackground(){
-          let background = UIImage(named: "victor-freitas-JbI04nYfaJk-unsplash")
+          let background = UIImage(named: "Hexagon background")
           var imageView : UIImageView!
           imageView = UIImageView(frame: view.bounds)
         imageView.contentMode =  UIView.ContentMode.scaleAspectFill
