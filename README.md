@@ -22,8 +22,8 @@ if you get GoogleSignIn error or the AppAuth error the main solutions would be..
 OR
   - open terminal
   - navigate to fitApp
-  - run '$ pod update' 
+  - run `$ pod update`
   OR
-  - run '$ pod deintegrate'
-  - run '$ pod install'
+  - run `$ pod deintegrate`
+  - run `$ pod install`
 
