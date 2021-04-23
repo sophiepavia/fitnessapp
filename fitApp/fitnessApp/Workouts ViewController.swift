@@ -8,7 +8,13 @@
 import UIKit
 
 class Workouts_ViewController: UIViewController {
-
+    
+    @IBOutlet weak var BodyLabel: UILabel!
+    
+    let bodyparts = [
+        "Legs", "Arms", "Biceps", "Triceps", "Chest", "Traps", "Glutes", "Hamstrings", "Calves", "Abs"
+    ]
+    let number = Int.random(in: 0..<9)
     
     func assignbackground(){
           let background = UIImage(named: "victor-freitas-JbI04nYfaJk-unsplash")
@@ -23,6 +29,7 @@ class Workouts_ViewController: UIViewController {
       }
     
     override func viewDidLoad() {
+        BodyLabel.text = bodyparts[number]
         super.viewDidLoad()
         assignbackground()
 
