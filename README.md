@@ -15,7 +15,7 @@ a workout logger app that feature fitness related calculators
 4. Alejandro Serrano
 5. Henry Gilbert
 
-## Bug
+## Bugs
 if you get GoogleSignIn error or the AppAuth error the main solutions would be...
   - first quit xcode 
   - repoen and run again
@@ -26,4 +26,6 @@ OR
   OR
   - run `$ pod deintegrate`
   - run `$ pod install`
+
+Known bug: If you enter invalid data in the calorie calculator, such as a string or symbols, the app will crash
 
