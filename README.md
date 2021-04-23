@@ -2,10 +2,10 @@
 
 
 ## Execute
-Download zip from github
-Open the executable titled "fitnessApp.xcworkspace"
-Set simulator to iPhone 11
-Press the "run" button
+Download zip from github  
+Open the executable titled "fitnessApp.xcworkspace"  
+Set simulator to iPhone 11  
+Press the "run" button  
 
 
 ## Description
